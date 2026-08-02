@@ -6,6 +6,7 @@ test('test', async ({ page }) => {
 
     await Login.gotoLoginPage();
     await Login.login('tomsmith', 'SuperSecretPassword!');
+    console.log('Login test is passed');
 
 /*   await page.goto('https://the-internet.herokuapp.com/login');
     await page.getByRole('textbox', { name: 'Username' }).click();
