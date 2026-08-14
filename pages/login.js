@@ -1,3 +1,4 @@
+//Author: Shivakrishna
 export class LoginPage {
 
     constructor(page) {
@@ -19,6 +20,7 @@ export class LoginPage {
         await this.password_textbox.fill(password);
         await this.login_button.click();
         await this.logout_button.click();
+        
 
     }
 }

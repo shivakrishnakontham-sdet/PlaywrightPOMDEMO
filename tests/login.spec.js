@@ -1,12 +1,13 @@
+//Author: Shivakrishna
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/login';
-
 test('test', async ({ page }) => {
     const Login = new LoginPage(page);
-
-    await Login.gotoLoginPage();
-    await Login.login('tomsmith', 'SuperSecretPassword!');
+        await Login.gotoLoginPage();
+        await Login.login('tomsmith', 'SuperSecretPassword!');
     console.log('Login test is passed');
+
+    console.log("Test Passed")
 
 /*   await page.goto('https://the-internet.herokuapp.com/login');
     await page.getByRole('textbox', { name: 'Username' }).click();
