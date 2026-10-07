@@ -11,6 +11,7 @@ test('test', async ({ page }) => {
         await Login.logout();
 
     console.log('Login test is passed');
+    console.log('Test case Execution Ended');
     });
 
 /*   await page.goto('https://the-internet.herokuapp.com/login');
